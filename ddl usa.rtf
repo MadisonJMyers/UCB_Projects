@@ -1,0 +1,847 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh15520\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 Code to be executed after connecting to the instance and changing user as w205 instead of root:\
+\
+wget https://s3.amazonaws.com/w205akssg/us/ap.area.txt\
+tail -n+2 ap.area.txt > us1.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us1 \
+hdfs dfs -put us1.txt /user/w205/project/us1\
+
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/ap.data.0.Current.txt\
+tail -n+2 ap.data.0.Current.txt > us2.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us2 \
+hdfs dfs -put us2.txt /user/w205/project/us2\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/ap.item.txt\
+tail -n+2 ap.item.txt > us3.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us3 \
+hdfs dfs -put us3.txt /user/w205/project/us3\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/ap.period.txt\
+tail -n+2 ap.period.txt > us4.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us4 \
+hdfs dfs -put us4.txt /user/w205/project/us4\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/ap.series.txt\
+tail -n+2 ap.series.txt > us5.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us5 \
+hdfs dfs -put us5.txt /user/w205/project/us5\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/cx.data.1.AllData.txt\
+tail -n+2 cx.data.1.AllData.txt > us6.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us6 \
+hdfs dfs -put us6.txt /user/w205/project/us6\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/cx.characteristics.txt\
+tail -n+2 cx.characteristics.txt > us7.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us7 \
+hdfs dfs -put us7.txt /user/w205/project/us7\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/cx.demographics.txt\
+tail -n+2 cx.demographics.txt > us8.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us8 \
+hdfs dfs -put us8.txt /user/w205/project/us8\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/cx.footnote.txt\
+tail -n+2 cx.footnote.txt > us9.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us9 \
+hdfs dfs -put us9.txt /user/w205/project/us9\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/cx.item.txt\
+tail -n+2 cx.item.txt > us10.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us10 \
+hdfs dfs -put us10.txt /user/w205/project/us10\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/cx.series.txt\
+tail -n+2 cx.series.txt > us11.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us11 \
+hdfs dfs -put us11.txt /user/w205/project/us11\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/cx.subcategory.txt\
+tail -n+2 cx.subcategory.txt > us12.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us12 \
+hdfs dfs -put us12.txt /user/w205/project/us12\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/ml.footnote.txt\
+tail -n+2 ml.footnote.txt > us13.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us13 \
+hdfs dfs -put us13.txt /user/w205/project/us13\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/ml.irc.txt\
+tail -n+2 ml.irc.txt > us14.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us14 \
+hdfs dfs -put us14.txt /user/w205/project/us14\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/ml.srd.txt\
+tail -n+2 ml.srd.txt > us15.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us15 \
+hdfs dfs -put us15.txt /user/w205/project/us15\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/ml.series.txt\
+tail -n+2 ml.series.txt > us16.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us16 \
+hdfs dfs -put us16.txt /user/w205/project/us16\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/ml.data.1.AllData.txt\
+tail -n+2 ml.data.1.AllData.txt > us17.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us17 \
+hdfs dfs -put us17.txt /user/w205/project/us17\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/ml.data.0.Current.txt\
+tail -n+2 ml.data.0.Current.txt > us18.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us18 \
+hdfs dfs -put us18.txt /user/w205/project/us18\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/pr.series.txt\
+tail -n+2 pr.series.txt > us19.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us19 \
+hdfs dfs -put us19.txt /user/w205/project/us19\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/pr.sector.txt\
+tail -n+2 pr.sector.txt > us20.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us20 \
+hdfs dfs -put us20.txt /user/w205/project/us20\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/pr.measure.txt\
+tail -n+2 pr.measure.txt > us21.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us21 \
+hdfs dfs -put us21.txt /user/w205/project/us21\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/pr.data.1.AllData.txt\
+tail -n+2 pr.data.1.AllData.txt > us22.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us22 \
+hdfs dfs -put us22.txt /user/w205/project/us22\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/pr.data.0.Current.txt\
+tail -n+2 pr.data.0.Current.txt > us23.txt
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us23 \
+hdfs dfs -put us23.txt /user/w205/project/us23\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/2015.annual.singlefile.csv\
+tail -n+2 2015.annual.singlefile.csv > us24.csv
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us1 \
+hdfs dfs -put us1.txt /user/w205/project/us1\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 wget https://s3.amazonaws.com/w205akssg/us/area_titles.csv\
+tail -n+2 area_titles.csv > us25.csv
+\f1\fs24 \CocoaLigature1 \
+
+\f0\fs22 \CocoaLigature0 hdfs dfs -mkdir /user/w205/project/us25\
+hdfs dfs -put us25.csv /user/w205/project/us25\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 \
+\
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Average price -cpi (consumer price index)\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+ap.area.txt\
+\
+DROP TABLE  us_area_code;\
+CREATE EXTERNAL TABLE us_area_code\
+(area_code string,\
+area_name string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us1/\'91;\
+\
+ap.data.0.Current.txt\
+\
+DROP TABLE us_cpi_data;\
+CREATE EXTERNAL TABLE us_cpi_data\
+(series_id string,\
+year string,\
+period string,\
+value string,\
+footnote_codes string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us2/\'91;\
+\
+ap.item.txt\
+\
+DROP TABLE  us_ap_item;\
+CREATE EXTERNAL TABLE us_ap_item\
+(item_code string,\
+item_name string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us3/\'91;\
+\
+ap.period.txt\
+\
+DROP TABLE  us_ap_period;\
+CREATE EXTERNAL TABLE us_ap_period\
+(period_code string,\
+period_abbr string,\
+period_name string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us4/\'91;\
+\
+ap.series.txt\
+\
+DROP TABLE  us_ap_series;\
+CREATE EXTERNAL TABLE us_ap_series\
+(series_code string,\
+area_code string,\
+item_code string,\
+footnote_code string,\
+begin_year string,\
+begin_period string,\
+end_year  string,\
+end_period string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us5/\'91;\
+\
+consumer expenditure\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+cx.data.1.AllData.txt\
+\
+DROP TABLE  us_cx_data;\
+CREATE EXTERNAL TABLE us_cx_data\
+(series_code string,\
+year_code string,\
+period_code string,\
+value string,\
+footnote_code string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us6/\'91;\
+\
+cx.characteristics.txt\
+\
+DROP TABLE  us_cx_characteristics;\
+CREATE EXTERNAL TABLE us_cx_characteristics\
+(demographics_code string,\
+characteristics_code string,\
+characteristics_text string,\
+display_level string,\
+selectable string,\
+sort_sequence string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us7/\'91;\
+\
+cx.demographics.txt\
+\
+DROP TABLE  us_cx_demographics;\
+CREATE EXTERNAL TABLE us_cx_demographics\
+(demographics_code string,\
+demographics_text string,\
+display_level string,\
+selectable string,\
+sort_sequence string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us8/\'91;\
+\
+cx.footnote.txt\
+\
+DROP TABLE  us_cx_footnote;\
+CREATE EXTERNAL TABLE us_cx_footnote\
+(footnote_code string,\
+footnote_text string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us9/\'91;\
+\
+cx.item.txt\
+\
+DROP TABLE  us_cx_item;\
+CREATE EXTERNAL TABLE us_cx_item\
+(subcategory_code string,\
+item_code string,\
+item_text string,\
+display_level string,\
+selectable string,\
+sort_sequence string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us10/\'91;\
+\
+cx.series.txt\
+\
+DROP TABLE  us_cx_series;\
+CREATE EXTERNAL TABLE us_cx_series\
+(\
+series_id string,\
+seasonal string,\
+category_code string,\
+subcategory_code string,\
+item_code string,\
+demographics_code string,\
+characteristics_code string,\
+process_code string,\
+series_title string,\
+footnote_code string,\
+begin_year string,\
+begin_period string,\
+end_year string,\
+end_period string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us11/\'91;\
+\
+cx.subcategory.txt\
+\
+DROP TABLE  us_cx_subcategory;\
+CREATE EXTERNAL TABLE us_cx_subcategory\
+(\
+category_code string,\
+subcategory_code string,\
+subcategory_text string,\
+column_text string,\
+display_level string,\
+selectable string,\
+sort_sequence string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us12/\'91;\
+\
+Mass Layoffs\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+ml.footnote.txt\
+\
+DROP TABLE  us_ml_footnote;\
+CREATE EXTERNAL TABLE us_ml_footnote\
+(\
+footnote_code string,\
+footnote_text string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us13/\'91;\
+\
+ml.irc.txt\
+\
+DROP TABLE  us_ml_irc;\
+CREATE EXTERNAL TABLE us_ml_irc\
+(\
+irc_code string,\
+irc_text string,\
+display_level string,\
+selectable string,\
+sort_sequence string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us14/\'91;\
+\
+ml.srd.txt\
+(has no header)\
+\
+DROP TABLE  us_ml_srd;\
+CREATE EXTERNAL TABLE us_ml_srd\
+(\
+srd_code string,\
+srd_text string,\
+display_level string,\
+selectable string,\
+sort_sequence string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us15/\'91;\
+\
+ml.series.txt\
+\
+DROP TABLE  us_ml_series;\
+CREATE EXTERNAL TABLE us_ml_series\
+(\
+series_id string,\
+dataseries_code string,\
+srd_code string,\
+industryb_code string,\
+irc_code string,\
+dataelement_code string,\
+footnote_codes string,\
+begin_year string,\
+begin_period string,\
+end_year string,\
+end_period string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us16/\'91;\
+\
+ml.data.1.AllData.txt\
+\
+DROP TABLE  us_ml_alldata;\
+CREATE EXTERNAL TABLE us_ml_alldata\
+(\
+series_id string,\
+year string,\
+period string,\
+value string,\
+footnote_codes string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us17/\'91;\
+\
+\
+ml.data.0.Current.txt\
+\
+DROP TABLE  us_ml_current;\
+CREATE EXTERNAL TABLE us_ml_current\
+(\
+series_id string,\
+year string,\
+period string,\
+value string,\
+footnote_codes string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us18/\'91;\
+\
+occupational employment statistics - all in xl need to change to cvs\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+Sector productivity and costs\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+pr.series.txt\
+\
+DROP TABLE  us_pr_series;\
+CREATE EXTERNAL TABLE us_pr_series\
+(\
+series_id string,\
+sector_code string,\
+class_code string,\
+measure_code string,\
+duration_code string,\
+seasonal string,\
+base_year string,\
+footnote_codes string,\
+begin_year string,\
+begin_period string,\
+end_year string,\
+end_period string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us19/\'91;\
+\
+pr.sector.txt\
+\
+DROP TABLE  us_pr_sector;\
+CREATE EXTERNAL TABLE us_pr_sector\
+(\
+sector_code string,\
+sector_name string,\
+display_level string,\
+selectable string,\
+sort_sequence string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us20/\'91;\
+pr.measure.txt\
+\
+DROP TABLE  us_pr_measure;\
+CREATE EXTERNAL TABLE us_pr_measure\
+(\
+measure_code string,\
+measure_text string,\
+display_level string,\
+selectable string,\
+sort_sequence string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us21/\'91;\
+\
+pr.data.1.AllData.txt\
+\
+DROP TABLE  us_pr_alldata;\
+CREATE EXTERNAL TABLE us_pr_alldata\
+(\
+series_id string,\
+year string,\
+period string,\
+value string,\
+footnote_codes string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us22/\'91;\
+\
+pr.data.0.Current.txt\
+\
+DROP TABLE  us_pr_current;\
+CREATE EXTERNAL TABLE us_pr_current\
+(\
+series_id string,\
+year string,\
+period string,\
+value string,\
+footnote_codes string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us23/\'91;\
+\
+\
+Quarterly Census of Employment and Wages \
+some are non csv files - need to work on them\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+2015.annual.singlefile.csv\
+\
+DROP TABLE  us_empwage_2015;\
+CREATE EXTERNAL TABLE us_empwage_2015\
+(\
+area_fips string, \
+own_code string,\
+industry_code string,\
+agglvl_code string,\
+size_code string,\
+year string,\
+qtr string,\
+disclosure_code string,\
+annual_avg_estabs string,\
+annual_avg_emplvl string,\
+total_annual_wages string,\
+taxable_annual_wages string,\
+annual_contributions string,\
+annual_avg_wkly_wage string,\
+avg_annual_pay string,\
+lq_disclosure_code string,\
+lq_annual_avg_estabs string,\
+lq_annual_avg_emplvl string,\
+lq_total_annual_wages string,\
+lq_taxable_annual_wages string,\
+lq_annual_contributions string,\
+lq_annual_avg_wkly_wage string,\
+lq_avg_annual_pay string,\
+oty_disclosure_code string,\
+oty_annual_avg_estabs_chg string,\
+oty_annual_avg_estabs_pct_chg string,\
+oty_annual_avg_emplvl_chg string,\
+oty_annual_avg_emplvl_pct_chg string,\
+oty_total_annual_wages_chg string,\
+oty_total_annual_wages_pct_chg string,\
+oty_taxable_annual_wages_chg string,\
+oty_taxable_annual_wages_pct_chg string,\
+oty_annual_contributions_chg string,\
+oty_annual_contributions_pct_chg string,\
+oty_annual_avg_wkly_wage_chg string,\
+oty_annual_avg_wkly_wage_pct_chg string,\
+oty_avg_annual_pay_chg string,\
+oty_avg_annual_pay_pct_chg string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us24/\'91;\
+\
+\
+area_titles.csv\
+\
+DROP TABLE  us_area_titles;\
+CREATE EXTERNAL TABLE us_area_titles\
+(\
+area_fips string,\
+area_title string\
+)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93\\t\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/us25/\'91;\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 \expnd0\expndtw0\kerning0
+Location quotients are a ratio of ratios that measure the concentration of an industry within a specific area to the concentration of that industry nationwide\
+_________\
+}

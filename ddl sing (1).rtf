@@ -1,0 +1,580 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10380\viewh15280\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+wget https://s3.amazonaws.com/w205akssg/sg/Avg_Home_ownership_by_dwelling.csv\
+tail -n +2 Avg_Home_ownership_by_dwelling.csv > sg1.csv\
+hdfs dfs -mkdir /user/w205/project/sg1\
+hdfs dfs -put sg1.csv /user/w205/project/sg1\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Avg_Household_size_by_dwelling.csv\
+tail -n +2 Avg_Household_size_by_dwelling.csv > sg2.csv\
+hdfs dfs -mkdir /user/w205/project/sg2\
+hdfs dfs -put sg2.csv /user/w205/project/sg2\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Avg_monthly_expenditure_by_income.csv\
+tail -n +2 Avg_monthly_expenditure_by_income.csv > sg3.csv\
+hdfs dfs -mkdir /user/w205/project/sg3\
+hdfs dfs -put sg3.csv /user/w205/project/sg3\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Avg_monthly_Recruit_industry_occupation.csv\
+tail -n +2 Avg_monthly_Recruit_industry_occupation.csv > sg4.csv\
+hdfs dfs -mkdir /user/w205/project/sg4\
+hdfs dfs -put sg4.csv /user/w205/project/sg4\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Avg_monthly_Resign_industry_occupation.csv\
+tail -n +2 Avg_monthly_Resign_industry_occupation.csv > sg5.csv\
+hdfs dfs -mkdir /user/w205/project/sg5\
+hdfs dfs -put sg5.csv /user/w205/project/sg5\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Avg_weekly_hours_industry.csv\
+tail -n +2 Avg_weekly_hours_industry.csv > sg6.csv\
+hdfs dfs -mkdir /user/w205/project/sg6\
+hdfs dfs -put sg6.csv /user/w205/project/sg6\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Business_exp_mfg_by_industry_Q.csv\
+tail -n +2 Business_exp_mfg_by_industry_Q.csv > sg7.csv\
+hdfs dfs -mkdir /user/w205/project/sg7\
+hdfs dfs -put sg1.csv /user/w205/project/sg7\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Business_exp_services_next_6m_Q.csv\
+tail -n +2 Business_exp_services_next_6m_Q.csv > sg8.csv\
+hdfs dfs -mkdir /user/w205/project/sg8\
+hdfs dfs -put sg8.csv /user/w205/project/sg8\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Change_in_Emp_by_Sector_Q.csv\
+tail -n +2 Change_in_Emp_by_Sector_Q.csv > sg9.csv\
+hdfs dfs -mkdir /user/w205/project/sg9\
+hdfs dfs -put sg9.csv /user/w205/project/sg9\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Emp_by_industry_occupation.csv\
+tail -n +2 Emp_by_industry_occupation.csv > sg10.csv\
+hdfs dfs -mkdir /user/w205/project/sg10\
+hdfs dfs -put sg10.csv /user/w205/project/sg10\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Female_by_Industry_age_Level4.csv\
+tail -n +2 Female_by_Industry_age_Level4.csv > sg11.csv\
+hdfs dfs -mkdir /user/w205/project/sg11\
+hdfs dfs -put sg11.csv /user/w205/project/sg11\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Female_Labour_Force_Status_Age_2.csv\
+tail -n +2 Female_Labour_Force_Status_Age_2.csv > sg12.csv\
+hdfs dfs -mkdir /user/w205/project/sg12\
+hdfs dfs -put sg12.csv /user/w205/project/sg12\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Female_Occupation_Age_Level3.csv\
+tail -n +2 Female_Occupation_Age_Level3.csv > sg13.csv\
+hdfs dfs -mkdir /user/w205/project/sg13\
+hdfs dfs -put sg13.csv /user/w205/project/sg13\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Labour_Force_1a.csv\
+tail -n +2 Labour_Force_1a.csv > sg14.csv\
+hdfs dfs -mkdir /user/w205/project/sg14\
+hdfs dfs -put sg14.csv /user/w205/project/sg14\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Labour_Force_1b.csv\
+tail -n +2 Labour_Force_1b.csv > sg15.csv\
+hdfs dfs -mkdir /user/w205/project/sg15\
+hdfs dfs -put sg15.csv /user/w205/project/sg15\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Labour_Force_by_status_age_2.csv\
+tail -n +2 Labour_Force_by_status_age_2.csv > sg16.csv\
+hdfs dfs -mkdir /user/w205/project/sg16\
+hdfs dfs -put sg16.csv /user/w205/project/sg16\
+\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Male_by_Industry_age_Level4.csv\
+tail -n +2 Male_by_Industry_age_Level4.csv > sg17.csv\
+hdfs dfs -mkdir /user/w205/project/sg17\
+hdfs dfs -put sg17.csv /user/w205/project/sg17\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Male_Labour_Force_Status_Age_2.csv\
+tail -n +2 Male_Labour_Force_Status_Age_2.csv > sg18.csv\
+hdfs dfs -mkdir /user/w205/project/sg18\
+hdfs dfs -put sg18.csv /user/w205/project/sg18\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Male_occupation_age_Level3.csv\
+tail -n +2 Male_occupation_age_Level3.csv > sg19.csv\
+hdfs dfs -mkdir /user/w205/project/sg19\
+hdfs dfs -put sg19.csv /user/w205/project/sg19\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Monthly_income.csv\
+tail -n +2 Monthly_income.csv > sg20.csv\
+hdfs dfs -mkdir /user/w205/project/sg20\
+hdfs dfs -put sg20.csv /user/w205/project/sg20\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Pop_age_housing.csv\
+tail -n +2 Pop_age_housing.csv > sg21.csv\
+hdfs dfs -mkdir /user/w205/project/sg21\
+hdfs dfs -put sg21.csv /user/w205/project/sg21\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Pop_by_age_ethnic_gender.csv\
+tail -n +2 Pop_by_age_ethnic_gender.csv > sg22.csv\
+hdfs dfs -mkdir /user/w205/project/sg22\
+hdfs dfs -put sg22.csv /user/w205/project/sg22\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Unit_cost_of_mfg_index_2010_Q.csv\
+tail -n +2 Unit_cost_of_mfg_index_2010_Q.csv > sg23.csv\
+hdfs dfs -mkdir /user/w205/project/sg23\
+hdfs dfs -put sg23.csv /user/w205/project/sg23\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Unit_Lab_Cost_Index_2010_100_Q.csv\
+tail -n +2 Unit_Lab_Cost_Index_2010_100_Q.csv > sg24.csv\
+hdfs dfs -mkdir /user/w205/project/sg24\
+hdfs dfs -put sg24.csv /user/w205/project/sg24\
+\
+wget https://s3.amazonaws.com/w205akssg/sg/Value_Added_hour_industry.csv\
+tail -n +2 Value_Added_hour_industry.csv > sg25.csv\
+hdfs dfs -mkdir /user/w205/project/sg25\
+hdfs dfs -put sg25.csv /user/w205/project/sg25\
+\
+
+\b Executed but not used sg26
+\b0 \
+wget https://s3.amazonaws.com/w205akssg/sg/GDP_2010.csv\
+tail -n +2 GDP_2010.csv > sg26.csv\
+hdfs dfs -mkdir /user/w205/project/sg26\
+hdfs dfs -put sg26.csv /user/w205/project/sg26\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+Avg Home ownership by dwelling.csv \
+\
+DROP TABLE  avg_hdb_ownership_dwelling;\
+CREATE EXTERNAL TABLE avg_hdb_ownership_dwelling\
+(year string,\
+table_type string,\
+hdb_type string,\
+ownership_rate string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg1/\'91;\
+\
+Avg Household size by dwelling.csv\
+\
+DROP TABLE  avg_house_size_dwelling;\
+CREATE EXTERNAL TABLE avg_house_size_dwelling\
+(year string,\
+table_type string,\
+house_type string,\
+size string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg2/\'91;\
+\
+Avg monthly expenditure by income.csv\
+\
+DROP TABLE  avg_expenditure_income;\
+CREATE EXTERNAL TABLE avg_expenditure_income\
+(year string,\
+income_level string,\
+monthly_expenditure string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg3/\'91\
+\
+Avg monthly Recruit industry occupation.csv\
+DROP TABLE  avg_recruit_industry_occupation;\
+CREATE EXTERNAL TABLE avg_recruit_industry_occupation\
+(year string,\
+table_type string,\
+industry_type string,\
+occupation_type string,\
+recruitment_rate string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg4/\'91\
+\
+Avg monthly Resign industry occupation.csv\
+\
+DROP TABLE  avg_resign_industry_occupation;\
+CREATE EXTERNAL TABLE avg_resign_industry_occupation\
+(year string,\
+table_type string,\
+industry_type string,\
+occupation_type string,\
+resignation_rate string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg5/\'91\
+\
+Avg weekly hours industry.csv\
+\
+DROP TABLE  avg_weekly_hours_industry;\
+CREATE EXTERNAL TABLE avg_weekly_hours_industry\
+(year string,\
+table_type string,\
+industry_type string,\
+weekly_hours string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg6/\'91\
+\
+Business exp mfg by industry Q.csv\
+\
+DROP TABLE  avg_quarterly_expectation_mfg;\
+CREATE EXTERNAL TABLE avg_quarterly_expectation_mfg\
+(year_quarter string,\
+table_type string,\
+industry_type string,\
+industry_sub_type string,\
+6m_expectation string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg7/\'91\
+\
+Business exp services next 6m Q.csv\
+\
+DROP TABLE  avg_quarterly_expectation_ser;\
+CREATE EXTERNAL TABLE avg_quarterly_expectation_ser\
+(year_quarter string,\
+measure_type string,\
+6m_expectation string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg8/\'91\
+\
+Change in Emp by Sector Q.csv\
+\
+DROP TABLE  quarterly_employ_change_sector;\
+CREATE EXTERNAL TABLE quarterly_employ_change_sector\
+(year_quarter string,\
+table_type string,\
+industry_type string,\
+industry_sub_type string,\
+industry_sub_sub_type string,\
+change_employment string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg9/\'91\
+\
+\
+Emp by industry occupation.csv\
+\
+DROP TABLE  employ_industry_occupation;\
+CREATE EXTERNAL TABLE employ_industry_occupation\
+(year string,\
+occupation_type string,\
+industry_type string,\
+industry_sub_type string,\
+industry_sub_sub_type string,\
+employment string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg10/\'91\
+\
+Female by Industry age Level4.csv\
+\
+DROP TABLE  female_industry_age;\
+CREATE EXTERNAL TABLE female_industry_age\
+(year string,\
+age_group string,\
+industry_type string,\
+industry_sub_type string,\
+industry_sub_sub_type string,\
+employment string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg11/\'91\
+\
+Female Labour Force Status Age 2.csv\
+\
+DROP TABLE female_labour_age;\
+CREATE EXTERNAL TABLE female_labour_age\
+(year string,\
+group_type string,\
+age_group string,\
+percentage string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg12/\'91\
+\
+Female Occupation Age Level3.csv\
+\
+DROP TABLE female_occupation_age;\
+CREATE EXTERNAL TABLE female_occupation_age\
+(year string,\
+group_age_type string,\
+occupation_type string,\
+occupation_sub_type string,\
+percentage string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg13/\'91\
+\
+Labour Force 1a.csv\
+\
+DROP TABLE labour_force;\
+CREATE EXTERNAL TABLE labour_force\
+(year string,\
+group_type string,\
+value string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg14/\'91\
+\
+Labour Force 1b.csv\
+\
+DROP TABLE unemployment_rate;\
+CREATE EXTERNAL TABLE unemployment_rate\
+(year string,\
+group_type string,\
+percentage string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg15/\'91\
+\
+Labour Force by status age 2.csv\
+\
+DROP TABLE labour_force_age;\
+CREATE EXTERNAL TABLE labour_force_age\
+(year string,\
+group_type string,\
+age_group_type string,\
+value string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg16/\'91\
+\
+Male by Industry age Level4.csv\
+\
+DROP TABLE male_emp_industry_age;\
+CREATE EXTERNAL TABLE male_emp_industry_age\
+(year string,\
+age_group_type string,\
+industry_type string,\
+industry_sub_type string,\
+industry_sub_sub_type string,\
+value string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg17/\'91\
+\
+Male Labour Force Status Age 2.csv\
+\
+DROP TABLE male_labour_age;\
+CREATE EXTERNAL TABLE male_labour_age\
+(year string,\
+group_type string,\
+age_group string,\
+value string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg18/\'91\
+\
+Male Occupation Age Level3.csv\
+\
+DROP TABLE male_occupation_age;\
+CREATE EXTERNAL TABLE male_occupation_age\
+(year string,\
+group_age_type string,\
+occupation_type string,\
+occupation_sub_type string,\
+percentage string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg19/\'91\
+\
+Monthly income.csv\
+\
+DROP TABLE median_income;\
+CREATE EXTERNAL TABLE median_income\
+(year string,\
+table_type string,\
+value string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg20/\'91\
+\
+Pop age housing.csv\
+\
+DROP TABLE  pop_age_house;\
+CREATE EXTERNAL TABLE pop_age_house\
+(year string,\
+age_group string,\
+table_type string,\
+house_type string,\
+value string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg21/\'91\
+\
+Pop by age ethnic gender.csv\
+\
+DROP TABLE  pop_age_ethnic_gender;\
+CREATE EXTERNAL TABLE pop_age_ethnic_gender\
+(year string,\
+group_type string,\
+age_group string,\
+value string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg22/\'91\
+\
+Unit cost of mfg index 2010 Q.csv\
+\
+DROP TABLE  cost_mfg;\
+CREATE EXTERNAL TABLE cost_mfg\
+(year_quarter string,\
+table_type string,\
+cost_type string,\
+value_index string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg23/\'91\
+\
+\
+Unit_Lab_Cost_Index_2010_100_Q.csv\
+\
+DROP TABLE  cost_labour_q;\
+CREATE EXTERNAL TABLE cost_labour_q\
+(year_quarter string,\
+table_type string,\
+cost_type string,\
+value_index string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg24/\'91\
+\
+\
+\
+Value Added hour industry.csv\
+\
+DROP TABLE  value_added;\
+CREATE EXTERNAL TABLE value_added\
+(year string,\
+industry_type string,\
+value string)\
+ROW FORMAT SERDE \'91org.apache.hadoop.hive.serde2.OpenCSVSerde\'92\
+WITH SERDEPROPERTIES (\
+\'93separatorChar\'94=\'93,\'94,\
+\'93quoteChar\'94 =\'91\'93\'91,\
+\'93escapeChar\'94 =\'91\\\\'\
+)\
+STORED AS TEXTFILE\
+LOCATION \'91/user/w205/project/sg25/\'91\
+\
+}

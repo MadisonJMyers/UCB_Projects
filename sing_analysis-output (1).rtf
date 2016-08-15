@@ -1,0 +1,274 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs24 \cf0 Analysis 1: Net flow of employees ( recruitment-resignation)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b0\fs22 \cf0 \CocoaLigature0 \
+hive> Select * from EMP_CHANGE_ADJ where emp_change_net IS NOT NULL;\
+OK\
+2006	Accommodation And Food Services	0.6999999999999993\
+2006	Financial And Insurance Services	0.9000000000000001\
+2006	Information And Communications	1.1\
+2006	Construction	1.2000000000000002\
+2006	Transportation And Storage	0.6000000000000001\
+2006	Wholesale And Retail Trade	0.6999999999999997\
+2007	Accommodation And Food Services	0.6999999999999993\
+2007	Financial And Insurance Services	1.2000000000000002\
+2007	Information And Communications	0.7000000000000002\
+2007	Construction	0.7999999999999998\
+2007	Transportation And Storage	1.0\
+2007	Wholesale And Retail Trade	0.7999999999999998\
+2008	Accommodation And Food Services	0.6999999999999997\
+2008	Financial And Insurance Services	0.8999999999999999\
+2008	Information And Communications	0.7999999999999998\
+2008	Construction	0.7999999999999998\
+2008	Transportation And Storage	0.8999999999999999\
+2008	Wholesale And Retail Trade	0.6999999999999997\
+2009	Accommodation And Food Services	0.0\
+2009	Financial And Insurance Services	0.5\
+2009	Information And Communications	0.3999999999999999\
+2009	Construction	0.7000000000000002\
+2009	Transportation And Storage	0.09999999999999987\
+2009	Wholesale And Retail Trade	0.30000000000000027\
+2010	Accommodation And Food Services	0.6000000000000005\
+2010	Financial And Insurance Services	1.1\
+2010	Information And Communications	1.1\
+2010	Construction	0.6000000000000001\
+2010	Transportation And Storage	0.6999999999999997\
+2010	Wholesale And Retail Trade	0.7000000000000002\
+2011	Accommodation And Food Services	0.7000000000000002\
+2011	Financial And Insurance Services	0.8999999999999999\
+2011	Information And Communications	1.1\
+2011	Construction	0.8999999999999995\
+2011	Transportation And Storage	0.7999999999999998\
+2011	Wholesale And Retail Trade	0.6000000000000001\
+2012	Accommodation And Food Services	0.2999999999999998\
+2012	Financial And Insurance Services	0.7\
+2012	Information And Communications	0.7999999999999998\
+2012	Construction	0.7999999999999998\
+2012	Transportation And Storage	0.6999999999999997\
+2012	Wholesale And Retail Trade	0.5\
+2013	Accommodation And Food Services	0.5\
+2013	Financial And Insurance Services	0.7000000000000002\
+2013	Information And Communications	0.7000000000000002\
+2013	Construction	0.6000000000000001\
+2013	Transportation And Storage	0.5999999999999999\
+2013	Wholesale And Retail Trade	0.6000000000000001\
+2014	Accommodation And Food Services	0.40000000000000036\
+2014	Financial And Insurance Services	0.8000000000000003\
+2014	Information And Communications	1.2\
+2014	Construction	0.3999999999999999\
+2014	Transportation And Storage	0.40000000000000013\
+2014	Wholesale And Retail Trade	0.5\
+2015	Accommodation And Food Services	0.5\
+2015	Financial And Insurance Services	0.7\
+2015	Information And Communications	0.8\
+2015	Construction	0.3999999999999999\
+2015	Transportation And Storage	0.5\
+2015	Wholesale And Retail Trade	0.5\
+2006	Business Services	1.066666666666667\
+2007	Business Services	1.0666666666666667\
+2008	Business Services	1.0333333333333332\
+2009	Business Services	0.8999999999999999\
+2010	Business Services	0.8666666666666668\
+2011	Business Services	0.9\
+2012	Business Services	0.7333333333333334\
+2013	Business Services	0.7333333333333334\
+2014	Business Services	0.7333333333333334\
+2015	Business Services	0.7333333333333334\
+2006	Manufacturing	1.4000000000000004\
+2007	Manufacturing	1.3\
+2008	Manufacturing	1.1499999999999997\
+2009	Manufacturing	0.8499999999999999\
+2010	Manufacturing	0.7500000000000002\
+2011	Manufacturing	1.0\
+2012	Manufacturing	0.7999999999999999\
+2013	Manufacturing	0.85\
+2014	Manufacturing	0.85\
+2015	Manufacturing	0.8500000000000002
+\f0\b\fs24 \CocoaLigature1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf0 \
+Analysis 2: Proportion of value added by employees across various industries \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b0\fs22 \cf0 \CocoaLigature0 \
+\
+Select * from PROP_EMP_VALUE_ADDED;\
+OK\
+2009	Accommodation & Food Services	3.0943396226415096\
+2009	Business Services	12.169811320754716\
+2009	Construction	4.578616352201258\
+2009	Finance & Insurance	23.20754716981132\
+2009	Information & Communications	14.69811320754717\
+2009	Manufacturing	12.943396226415095\
+2009	Transportation & Storage	14.433962264150944\
+2009	Wholesale & Retail Trade	14.874213836477987\
+2010	Accommodation & Food Services	3.1162301216089805\
+2010	Business Services	11.833489242282507\
+2010	Construction	4.560336763330215\
+2010	Finance & Insurance	22.293030869971936\
+2010	Information & Communications	13.42376052385407\
+2010	Manufacturing	15.493451824134706\
+2010	Transportation & Storage	13.944106641721234\
+2010	Wholesale & Retail Trade	15.335594013096351\
+2011	Accommodation & Food Services	3.2015170952088794\
+2011	Business Services	11.534385632215963\
+2011	Construction	4.350493613698477\
+2011	Finance & Insurance	21.953260081432315\
+2011	Information & Communications	12.806068380835518\
+2011	Manufacturing	16.453789949244243\
+2011	Transportation & Storage	14.11121646494506\
+2011	Wholesale & Retail Trade	15.589268782419543\
+2012	Accommodation & Food Services	3.2509537236689336\
+2012	Business Services	11.433626361475092\
+2012	Construction	4.688450268148394\
+2012	Finance & Insurance	21.988168297672363\
+2012	Information & Communications	13.14756454912368\
+2012	Manufacturing	16.033615303809366\
+2012	Transportation & Storage	14.242273456073423\
+2012	Wholesale & Retail Trade	15.21534804002875\
+2013	Accommodation & Food Services	3.219767877199551\
+2013	Business Services	11.06059795689148\
+2013	Construction	4.252019040487779\
+2013	Finance & Insurance	23.68294378777344\
+2013	Information & Communications	13.157190993207466\
+2013	Manufacturing	15.510509707439697\
+2013	Transportation & Storage	13.47809809060277\
+2013	Wholesale & Retail Trade	15.638872546397819\
+2014	Accommodation & Food Services	3.068573217826949\
+2014	Business Services	10.562571756601608\
+2014	Construction	4.07055630936228\
+2014	Finance & Insurance	24.60599102390147\
+2014	Information & Communications	13.479803778311242\
+2014	Manufacturing	15.342866089134747\
+2014	Transportation & Storage	13.385867863479804\
+2014	Wholesale & Retail Trade	15.4837699613819\
+2015	Accommodation & Food Services	2.987249544626594\
+2015	Business Services	10.070257611241217\
+2015	Construction	4.059328649492584\
+2015	Finance & Insurance	25.391621129326047\
+2015	Information & Communications	13.229247983346344\
+2015	Manufacturing	15.045537340619308\
+2015	Transportation & Storage	12.880562060889929\
+2015	Wholesale & Retail Trade	16.336195680457976\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f2\b\fs24 \cf0 \expnd0\expndtw0\kerning0
+\CocoaLigature1 Analysis 3: Outlook for next 6 months for services sector\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+Select * from OUTLOOK_SERVICES;\
+OK\
+1995	16.5\
+1996	11.0\
+1997	4.5\
+1998	-29.25\
+1999	10.5\
+2000	19.75\
+2001	-19.5\
+2002	4.75\
+2003	9.5\
+2004	26.0\
+2005	21.25\
+2006	22.5\
+2007	20.25\
+2008	-15.75\
+2009	-2.5\
+2010	28.75\
+2011	0.5\
+2012	1.0\
+2013	6.0\
+2014	5.25\
+2015	-4.75\
+2016	-13.0\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f2\b\fs24 \cf0 \expnd0\expndtw0\kerning0
+\CocoaLigature1 Analysis 4: Outlook for next 6 months for mfg sector\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+SELECT * FROM OUTLOOK_MFG;\
+OK\
+1970	NULL\
+1971	NULL\
+1972	NULL\
+1973	NULL\
+1974	NULL\
+1975	NULL\
+1976	NULL\
+1977	NULL\
+1978	NULL\
+1979	NULL\
+1980	NULL\
+1981	NULL\
+1982	NULL\
+1983	NULL\
+1984	NULL\
+1985	NULL\
+1986	NULL\
+1987	NULL\
+1988	NULL\
+1989	NULL\
+1990	NULL\
+1991	NULL\
+1992	NULL\
+1993	NULL\
+1994	NULL\
+1995	NULL\
+1996	NULL\
+1997	NULL\
+1998	NULL\
+1999	NULL\
+2000	NULL\
+2001	NULL\
+2002	NULL\
+2003	2.1052631578947367\
+2004	17.342105263157894\
+2005	15.394736842105264\
+2006	18.289473684210527\
+2007	18.394736842105264\
+2008	-17.13157894736842\
+2009	0.13157894736842105\
+2010	17.69736842105263\
+2011	3.1447368421052633\
+2012	-0.47368421052631576\
+2013	4.828947368421052\
+2014	3.723684210526316\
+2015	-5.065789473684211\
+2016	-3.6842105263157894\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f2\b\fs24 \cf0 \expnd0\expndtw0\kerning0
+\CocoaLigature1 Analysis 5: Net Savings weighted by unemployment rate \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b0\fs22 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\
+Select * from net_monthly_income;\
+OK\
+2002	Median (50th Percentile)	-916\
+2003	Median (50th Percentile)	-888\
+2004	Median (50th Percentile)	-968\
+2006	Median (50th Percentile)	-826\
+2007	Median (50th Percentile)	-1160\
+2008	Median (50th Percentile)	-820\
+2009	Median (50th Percentile)	-821\
+2010	Median (50th Percentile)	-721\
+2011	Median (50th Percentile)	-450\
+2012	Median (50th Percentile)	-1323\
+2013	Median (50th Percentile)	-1105\
+2014	Median (50th Percentile)	-1042\
+2015	Median (50th Percentile)	-868\
+Time taken: 0.177 seconds, Fetched: 13 row(s)}
