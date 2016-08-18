@@ -37,7 +37,7 @@ This is the set of hive codes for doing analysis over the existing tables create
 
 5. W205_FinalProject-ASahni-SYChang-MJMyers.pdf
 
-Final Project Summary
+Final Project Summary. Also viewable at the following URL: https://docs.google.com/document/d/1Ncn5VU_5CDpdiWq2ItRo-sJQFeTlL7OOE3yUo0QwBzo/edit?usp=sharing
 
 6.W205_Final_ARMA_Prediction-Copy1.ipynb
 
