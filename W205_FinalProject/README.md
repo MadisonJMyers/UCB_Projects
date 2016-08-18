@@ -51,6 +51,10 @@ Jupyter Notebook File (Python) for the Final FRED analysis
 
 Jupyter Notebook File (Python) for the Final TS Prediction
 
+9. Group_w205_Project_A.Sahni_SY.Chang_MJ.Myers
+
+Powerpoint Presentation for Group Project
+
 All data sources are listed in the Final Project PDF.
 
 
